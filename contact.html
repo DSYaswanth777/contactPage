@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=" />
+    <title> Contact Us </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script
+      src="https://kit.fontawesome.com/c32adfdcda.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        width: 100%;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+        background-image: url(https://ellenonlinestore.com/wp-content/uploads/2024/01/e2.jpeg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+      }
+
+      body::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      section {
+        position: relative;
+        z-index: 3;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      .container {
+        max-width: 1080px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .section-header {
+        margin-bottom: 50px;
+        text-align: center;
+      }
+
+      .section-header h2 {
+        color: #ffff;
+        font-weight: bold;
+        font-size: 3em;
+        margin-bottom: 20px;
+      }
+
+      .section-header p {
+        color: #ffff;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .contact-info {
+        width: 50%;
+      }
+
+      .contact-info-item {
+        display: flex;
+        margin-bottom: 30px;
+      }
+
+      .contact-info-icon {
+        height: 70px;
+        width: 70px;
+        background-color: #fff;
+        text-align: center;
+        border-radius: 50%;
+      }
+
+      .contact-info-icon i {
+        font-size: 30px;
+        line-height: 70px;
+      }
+
+      .contact-info-content {
+        margin-left: 20px;
+      }
+
+      .contact-info-content h4 {
+        color: #ffff;
+        font-size: 1.4em;
+        margin-bottom: 5px;
+      }
+
+      .contact-info-content p {
+        color: #fff;
+        font-size: 1em;
+      }
+
+      .contact-form {
+        background-color: #fff;
+        padding: 40px;
+        width: 45%;
+        padding-bottom: 20px;
+        padding-top: 20px;
+      }
+
+      .contact-form h2 {
+        font-weight: bold;
+        font-size: 2em;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .contact-form .input-box {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .contact-form .input-box input,
+      .contact-form .input-box textarea {
+        width: 100%;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        border: none;
+        border-bottom: 2px solid #333;
+        outline: none;
+        resize: none;
+      }
+
+      .contact-form .input-box span {
+        position: absolute;
+        left: 0;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        pointer-events: none;
+        transition: 0.5s;
+        color: #666;
+      }
+
+      .contact-form .input-box input:focus ~ span,
+      .contact-form .input-box textarea:focus ~ span {
+        color: #e91e63;
+        font-size: 12px;
+        transform: translateY(-20px);
+      }
+
+      .contact-form .input-box input[type="submit"] {
+        width: 100%;
+        background: #413e65;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 18px;
+        border: 1px solid #00bcd4;
+        transition: 0.5s;
+      }
+
+      .contact-form .input-box input[type="submit"]:hover {
+        background: #fff;
+        color: #413e65;
+      }
+      .mapSection {
+        /* background-color: #413e65; */
+        padding: 40px;
+        border-radius: 20px;
+        text-align: center;
+        border: 10px ;
+      }
+      @media (max-width: 991px) {
+        section {
+          padding-top: 50px;
+          padding-bottom: 50px;
+        }
+
+        .row {
+          flex-direction: column;
+        }
+
+        .contact-info {
+          margin-bottom: 40px;
+          width: 100%;
+        }
+
+        .contact-form {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="section-header">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <p>
+            At Ellen Online Store, we believe that every wall has a story to
+            tell. Our passion for transforming spaces with beautiful,
+            high-quality wallpapers is at the core of everything we do.
+            Specializing in a diverse range of wallpapers for homes, offices,
+            and corporate environments, we are dedicated to helping you create
+            an ambiance that reflects your style and personality.
+          </p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-home"></i>
+              </div>
+
+              <div class="contact-info-content">
+                <h4>Address</h4>
+                <p>
+                  Door No-3-4-174/7/1/1, <br />Shop No 4, Pillar No :140, near
+                  Bank Of Baroda Lane, <br />
+                  Attapur, Telangana 500048
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+
+              <div class="contact-info-content">
+                <h4>Phone</h4>
+                <p>+91 92463 63611</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+
+              <div class="contact-info-content">
+                <h4>Email</h4>
+                <p>sales.ellenmarketing@gmail.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <form action="" id="contact-form">
+              <h2>Send Message</h2>
+              <div class="input-box">
+                <input type="text" required="true" name="" />
+                <span>Full Name</span>
+              </div>
+
+              <div class="input-box">
+                <input type="email" required="true" name="" />
+                <span>Email</span>
+              </div>
+              <div class="input-box">
+                <input type="tel" required="true" name="" />
+                <span>Mobile</span>
+              </div>
+
+              <div class="input-box">
+                <textarea required="true" name=""></textarea>
+                <span>Type your Message...</span>
+              </div>
+
+              <div class="input-box">
+                <input type="submit" value="Send" name="" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mapSection">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.9681886644!2d78.42517387516443!3d17.36526368351807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb97072e6385d7%3A0x854520acc1c2ad93!2sEllen%20Marketing!5e0!3m2!1sen!2sin!4v1713637698175!5m2!1sen!2sin"
+        width="800"
+        height="600"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  </body>
+</html>
